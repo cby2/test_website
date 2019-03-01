@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cby2</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- (Bootstrap 4) Jquery JS-->
+    <script src="static/js/jquery-3.3.1.js"></script>
+    <!-- CSS Block -->
+    <style>
+      body { 
+          padding-top: 55px; 
+      }
+      .carousel-item {
+          height: 100vh;
+          min-height: 350px;
+          background: no-repeat center center scroll;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+
+    </style>
+</head>
+<body>
+  <!-- Nav Bar -->  
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+      <div class="container">
+          <div class="navbar-collapse collapse" id="navbar10">
+              <ul class="navbar-nav nav-fill w-100">
+                  <li class="nav-item">
+                      <a class="nav-link" id="nav_about_us" href="#about_us">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="intro.html">Painters</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="index.html" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">CBY2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="nav_contact_us" href="#footer">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+
+
+    <!-- Main body -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators mb-5 pb-4">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('圖片/rr.jpg')">
+                <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+                    <h2 class="display-4">First Slide</h2>
+                    <p class="lead">This is a description for the first slide.</p>
+                </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('圖片/6.jpg')">
+                <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+                    <h2 class="display-4">Second Slide</h2>
+                    <p class="lead">This is a description for the second slide.</p>
+                </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('圖片/tt.jpg')">
+                <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+                    <h2 class="display-4">Third Slide</h2>
+                    <p class="lead">This is a description for the third slide.</p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev mb-5 pb-4" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next mb-5 pb-4" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+
+
+    <!-- Page Content 1 -->
+    <section class="py-5" id="about_us" style="height: 600px;">
+        <div class="container">
+            <h1 class="display-4">About CBY2</h1>
+            <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
+        </div>
+    </section>
+
+    <!-- Page Content 2 -->
+    <section class="py-5" style="height: 600px; background-color: #e1e5ea;">
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-4">
+                    <div class="box mt-5"></div>
+                </div>
+                <div class="col-6">
+                    <h1 class="display-4">About our services</h1>
+                    <p class="lead mt-4">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Content 3 -->
+    <section class="py-5" style="height: 600px;">
+        <div class="container">
+            <h1 class="display-4">About our services</h1>
+            <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo" id="footer" style="background-color: #e1e5ea;">
+        <!-- Footer Links -->
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Services</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Privacy Policy</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+          <hr class="rgba-white-light" style="margin: 0 15%;">
+
+          <!-- Grid row-->
+          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+            <!-- Grid column -->
+            <div class="col-md-8 col-12 mt-5">
+              <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+          <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+          <!-- Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <div class="mb-5 flex-center">
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Pinterest-->
+                <a class="pin-ic">
+                  <i class="fab fa-pinterest fa-lg white-text"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 pb-5">© 2019 Copyright:
+          <a href="#"> cby2</a>. All rights reserved.
+          <p class="mt-2">Designed by Jun-Hao, Chen</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      $("#nav_about_us").click(function() {
+          var section_to = $(this).attr('href');
+          $('html, body').animate({
+            scrollTop: $(section_to).offset().top
+          }, 1000);
+      });
+      $("#nav_contact_us").click(function() {
+          var section_to = $(this).attr('href');
+          $('html, body').animate({
+            scrollTop: $(section_to).offset().top
+          }, 1000);
+      });
+    </script>
+</body>
+</html>
