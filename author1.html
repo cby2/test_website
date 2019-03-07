@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cby2</title>
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -10,45 +11,60 @@
     <!-- CSS Block -->
     <style>
         body { 
-            padding-top: 55px; 
+           padding-top: 55px; 
         }
         .box {
-            height: 350px;
-            background-color: gray;
+          height: 350px;
+          background-color: gray;
         }
         .box2 {
-            height: 350px;
-            border-color: gray;
-            border-style: solid;
-            border-width: 2px;
+          height: 350px;
+          border-color: gray;
+          border-style: solid;
+          border-width: 2px;
+        }
+        .navbar-nav .nav-link {
+          font-size: 20px;
+          font-family: Microsoft JhengHei;
         }
     </style>
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
-        <div class="container">
-            <div class="navbar-collapse collapse" id="navbar10">
-                <ul class="navbar-nav nav-fill w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about_us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="intro.html">Painters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">CBY2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav_contact_us" href="#footer">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   
+    <!-- .navbar-brand 左上LOGO位置 -->
+    <a class="navbar-brand" href="index.html">
+      <!-- <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+      <span class="h3 mx-3">CBY2</span>
+    </a>
+    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+    <!-- 選單項目&漢堡式折疊選單 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ml-auto">
+        <!-- active表示當前頁面 -->
+        <li class="nav-item mr-5">
+          <a class="nav-link" id="nav_about_us" href="#about_us">關於 CBY2</a>
+        </li>
+        <li class="nav-item mr-5">
+          <a class="nav-link" id="nav_about_us" href="intro.html">畫家介紹</a>
+        </li>
+        <li class="nav-item mr-5">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item mr-5">
+            <a class="nav-link" id="nav_contact_us" href="#footer">聯絡方式</a>
+        </li>
+     </ul>
+    </div>
+  </nav>
 
 
 
@@ -58,7 +74,7 @@
         <div class="row justify-content-center">
             <!-- Image 1-1 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto"">
               <img class="card-img-top" src="圖片/1.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -66,7 +82,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -74,7 +90,7 @@
             
             <!-- Image 1-2 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/2.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -82,7 +98,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -90,7 +106,7 @@
 
             <!-- Image 1-3 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/aa.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -98,7 +114,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -106,7 +122,7 @@
 
             <!-- Image 2-1 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/4.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -114,7 +130,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -122,7 +138,7 @@
             
             <!-- Image 2-2 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/5.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -130,7 +146,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -138,7 +154,7 @@
 
             <!-- Image 2-3 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/6.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -146,7 +162,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -154,7 +170,7 @@
 
             <!-- Image 3-1 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/3.jpg" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -162,7 +178,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -170,7 +186,7 @@
             
             <!-- Image 3-2 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/test2.png" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
@@ -178,7 +194,7 @@
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
                       <button type="button" 
-                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">Go to Image</button>
+                      onclick='' class="btn btn-outline-info text-center" style="width: 10rem;">點擊觀看全圖</button>
                   </div>
               </div>
               </div>
@@ -186,14 +202,14 @@
 
             <!-- Image 3-3 -->
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
-              <div class="card mx-auto" style="width: 22rem;">
+              <div class="card mx-auto">
               <img class="card-img-top" src="圖片/test1.png" alt="Card image cap" height="280px">
               <div class="card-body">
                   <h5 class="card-title">Card Title</h5>
                   <h6 class="card-subtitle mb-2 text-muted">card discribe</h6>
                   <p class="card-text">Any information collected from our users will not be sold, shared, or rented to others in ways different from what is disclosed in this privacy statement.<br><a href="#" class="card-link">(click here to get more information.)</a></p>
                   <div class="col text-center">
-                      <a href="a1_im1.html" class="btn btn-outline-info text-center" role="button" style="width: 10rem;">Go to Image</a>
+                      <a href="a1_im1.html" class="btn btn-outline-info text-center" role="button" style="width: 10rem;">點擊觀看全圖</a>
                   </div>
               </div>
               </div>

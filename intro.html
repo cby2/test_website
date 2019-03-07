@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cby2</title>
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -9,74 +10,102 @@
     <script src="static/js/jquery-3.3.1.js"></script>
     <!-- CSS Block -->
     <style>
-        body { 
-            padding-top: 55px; 
-        }
-        .box {
-            height: 350px;
-            background-color: gray;
-        }
-        .box2 {
-            height: 350px;
-            border-color: gray;
-            border-style: solid;
-            border-width: 2px;
-        }
+      body { 
+        padding-top: 55px; 
+      }
+      .box {
+        height: 350px;
+        background-color: gray;
+      }
+      .box2 {
+        height: 350px;
+        border-color: gray;
+        border-style: solid;
+        border-width: 2px;
+      }
+      .navbar-nav .nav-link {
+        font-size: 20px;
+        font-family: Microsoft JhengHei;
+      }
     </style>
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
-        <div class="container">
-            <div class="navbar-collapse collapse" id="navbar10">
-                <ul class="navbar-nav nav-fill w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about_us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="intro.html">Painters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25">CBY2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav_contact_us" href="#footer">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   
+    <!-- .navbar-brand 左上LOGO位置 -->
+    <a class="navbar-brand" href="index.html">
+      <!-- <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+      <span class="h3 mx-3">CBY2</span>
+    </a>
+    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+    <!-- 選單項目&漢堡式折疊選單 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ml-auto">
+        <!-- active表示當前頁面 -->
+        <li class="nav-item mr-5">
+          <a class="nav-link" id="nav_about_us" href="#about_us">關於 CBY2</a>
+        </li>
+        <li class="nav-item mr-5">
+          <a class="nav-link" id="nav_about_us" href="intro.html">畫家介紹</a>
+        </li>
+        <li class="nav-item mr-5">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item mr-5">
+            <a class="nav-link" id="nav_contact_us" href="#footer">聯絡方式</a>
+        </li>
+     </ul>
+    </div>
+  </nav>
 
     <div class="container">
         <div class="row mt-5 justify-content-center">
-            <div class="col-4">
-                <img src="img\潘國光\c00.jpg" height="350px">
+            <!-- Image 1-1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
+              <div class="card mx-auto"">
+              <img class="card-img-top" src="img\潘國光\c00.jpg" alt="Card image cap" height="350px">
+              <div class="card-body">
+                  <h5 class="card-title">潘國光先生</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">擅山水及花鳥畫家</h6>
+                  <p class="card-text">
+                    1942年生，江蘇省靖江市人。師從於張辛稼先生，擅長山水畫，兼花鳥畫。蘇州市美術協會理事，吳門畫院院長，蘇州中國畫  研究會副會長，蘇州吳昌碩研究會副會長。前任蘇州吳門畫苑創作室主任，院長。蘇州第七，八，九，十屆政協常委。
+                    80年代應邀赴日本講學，交流。在東京西武榮寶齋等地多次舉辦“潘國光山水畫展”。作品《松鷹圖》日本東京美術館收藏。大型山水畫《大好河山》中國海關總署收藏。作品《跑馬山雪霽》《嘉陵江畔》被江蘇美術館收藏。作品《江南夏翠》被銀川美術館收藏。作品《山水清音》被鄧散木藝術館收藏。曾出版《潘國光唐人詩意作品集》，《江南著名畫家潘國光畫集》。
+                  </p>
+                  <div class="col text-center">
+                      <a class="btn btn-outline-secondary btn-lg btn-block" href="author1.html" role="button">點擊進入畫作頁面</a>
+                  </div>
+              </div>
+              </div>
             </div>
-            <div class="col-6">
-              <h3>潘國光，1942年生，擅山水及花鳥畫家</h3>
-              <p class="pt-3">
-              1942年生，江蘇省靖江市人。師從於張辛稼先生，擅長山水畫，兼花鳥畫。蘇州市美術協會理事，吳門畫院院長，蘇州中國畫  研究會副會長，蘇州吳昌碩研究會副會長。前任蘇州吳門畫苑創作室主任，院長。蘇州第七，八，九，十屆政協常委。
-              80年代應邀赴日本講學，交流。在東京西武榮寶齋等地多次舉辦“潘國光山水畫展”。作品《松鷹圖》日本東京美術館收藏。大型山水畫《大好河山》中國海關總署收藏。作品《跑馬山雪霽》《嘉陵江畔》被江蘇美術館收藏。作品《江南夏翠》被銀川美術館收藏。作品《山水清音》被鄧散木藝術館收藏。曾出版《潘國光唐人詩意作品集》，《江南著名畫家潘國光畫集》。
-              </p>
-              <a class="btn btn-outline-secondary btn-lg btn-block" href="author1.html" role="button">點擊以進入畫家畫作頁面</a>
+
+            <!-- Image 1-2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4">
+              <div class="card mx-auto"">
+              <img class="card-img-top" src="img\曹小欽\曹小欽-1.jpg" alt="Card image cap" height="350px">
+              <div class="card-body">
+                  <h5 class="card-title">曹小欽</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">擅山xxxxx畫家</h6>
+                  <p class="card-text">
+                    中國美術家協會會員、四川美術家協會、四川書法家協會、四川詩書畫家國際藝術交流協會會員；致公畫院副院長；香港“收藏家畫軒”專職畫師。擅長水墨人物、油畫、篆刻、書法兼長。作品多次參加國內外畫展，並有獲獎。作品被選送美、加、澳、日、東南亞等地展出，並舉辦12次個人畫展，廣為當地收藏家歡迎。代表作有《火把節系列》、《天葬系列》、《嘎曲瑪曲系列》、《牧歌系列》、《古風系列》、《人體系列》、《唐馬系列》等，並曾獲澳洲《雪梨金獎.亞太區水墨大獎賽》亞軍，加拿大《多倫多國際藝術雙年展》金獎，《海峽兩岸書畫展》一等獎，第五屆中國藝術節優秀作品獎，世博會《世紀.中國風情》；入選《世界華人書畫展》、《中國畫三百家》、《全國中國畫名家邀請展》、《新世紀杯中國畫大展》、《當代中國畫名家作品邀請展》、《今日水墨.全國中國畫名家作品巡迴展》等。其潛心研習沒骨畫和工筆劃，有意識地將工筆的細緻典雅與寫意的奔放率直、西畫的結構色彩與水墨的肌理神韻交相融合，追求著自己的獨特風格。
+                  <div class="col text-center">
+                      <a class="btn btn-outline-secondary btn-lg btn-block" href="author1.html" role="button">點擊進入畫作頁面</a>
+                  </div>
+              </div>
+              </div>
             </div>
+
+
         </div>
 
-        <div class="row mt-5 justify-content-center">
-            <div class="col-6">
-              <h3>曹小欽，1948年生。</h3>
-              <p class="pt-3">
-              中國美術家協會會員、四川美術家協會、四川書法家協會、四川詩書畫家國際藝術交流協會會員；致公畫院副院長；香港“收藏家畫軒”專職畫師。擅長水墨人物、油畫、篆刻、書法兼長。作品多次參加國內外畫展，並有獲獎。作品被選送美、加、澳、日、東南亞等地展出，並舉辦12次個人畫展，廣為當地收藏家歡迎。代表作有《火把節系列》、《天葬系列》、《嘎曲瑪曲系列》、《牧歌系列》、《古風系列》、《人體系列》、《唐馬系列》等，並曾獲澳洲《雪梨金獎.亞太區水墨大獎賽》亞軍，加拿大《多倫多國際藝術雙年展》金獎，《海峽兩岸書畫展》一等獎，第五屆中國藝術節優秀作品獎，世博會《世紀.中國風情》；入選《世界華人書畫展》、《中國畫三百家》、《全國中國畫名家邀請展》、《新世紀杯中國畫大展》、《當代中國畫名家作品邀請展》、《今日水墨.全國中國畫名家作品巡迴展》等。其潛心研習沒骨畫和工筆劃，有意識地將工筆的細緻典雅與寫意的奔放率直、西畫的結構色彩與水墨的肌理神韻交相融合，追求著自己的獨特風格。
-              </p>
-              <a class="btn btn-outline-secondary btn-lg btn-block" href="author1.html" role="button">點擊以進入畫家畫作頁面</a>
-            </div>
-            <div class="col-4">
-                <img src="img\曹小欽\曹小欽-1.jpg" height="430px">
-            </div>
-        </div>
+
 
 
     </div>
