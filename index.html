@@ -272,6 +272,12 @@
             scrollTop: $(section_to).offset().top
           }, 1000);
       });
+
+    // Mobile navbar collapse
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+
     </script>
 </body>
 </html>
